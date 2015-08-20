@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>Indicadores Financieros</name>
+    <author>ShakingWeb.com</author>
+    <creationDate>December 2014</creationDate>
+    <copyleft>Copyleft () 2014</copyleft>
+    <license>http://www.gnu.org/licenses/old-licenses/lgpl-2.0.html GNU/GPLv2</license>
+    <authorEmail>contacto@shakingweb.com</authorEmail>
+    <authorUrl>http://www.shakingweb.com</authorUrl>
+    <version>1.2.1</version>
+    <description>MOD_ECONOMICOS_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_economicos">mod_economicos.php</filename>
+        <folder>tmpl</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <filename>CHANGELOG.txt</filename>
+        <filename>mod_economicos.xml</filename>
+    </files>
+    
+    <languages>
+        <language tag="es-ES">languages/es-ES.mod_economicos.ini</language>
+        <language tag="en-GB">languages/en-GB.mod_economicos.ini</language>
+        <language tag="en-EN">languages/en-EN.mod_economicos.ini</language>
+    </languages>
+    
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="mostrar_uf" type="radio" default="1" label="MOD_ECONOMICOS_UF" description="MOD_ECONOMICOS_UF_DESC">
+                    <option value="1">MOD_ECONOMICOS_YES</option>
+                    <option value="0">MOD_ECONOMICOS_NO</option>
+                </field>
+                <field name="mostrar_dolar" type="radio" default="1" label="MOD_ECONOMICOS_DOLAR" description="MOD_ECONOMICOS_DOLAR_DESC">
+                    <option value="1">MOD_ECONOMICOS_YES</option>
+                    <option value="0">MOD_ECONOMICOS_NO</option>
+                </field>
+                <field name="mostrar_euro" type="radio" default="1" label="MOD_ECONOMICOS_EURO" description="MOD_ECONOMICOS_EURO_DESC">
+                    <option value="1">MOD_ECONOMICOS_YES</option>
+                    <option value="0">MOD_ECONOMICOS_NO</option>
+                </field>
+                <field name="mostrar_utm" type="radio" default="1" label="MOD_ECONOMICOS_UTM" description="MOD_ECONOMICOS_UTM_DESC">
+                    <option value="1">MOD_ECONOMICOS_YES</option>
+                    <option value="0">MOD_ECONOMICOS_NO</option>
+                </field>
+                <field name="mostrar_ipc" type="radio" default="1" label="MOD_ECONOMICOS_IPC" description="MOD_ECONOMICOS_IPC_DESC">
+                    <option value="1">MOD_ECONOMICOS_YES</option>
+                    <option value="0">MOD_ECONOMICOS_NO</option>
+                </field>
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="estilo" type="radio" default="0" label="MOD_ECONOMICOS_MOSTRAR_ESTILO" description="MOD_ECONOMICOS_MOSTRAR_ESTILO_DESC">
+                    <option value="0">MOD_ECONOMICOS_TABLA</option>
+                    <option value="1">MOD_ECONOMICOS_MARQUEE</option>
+                </field>
+                <field name="mostrar_borde_tabla" type="radio" default="1" label="MOD_ECONOMICOS_MOSTRAR_BORDE" description="MOD_ECONOMICOS_MOSTRAR_BORDE_DESC">
+                    <option value="1">MOD_ECONOMICOS_YES</option>
+                    <option value="0">MOD_ECONOMICOS_NO</option>
+                </field>
+                <field name="direccion_marquee" type="radio" default="0" label="MOD_ECONOMICOS_DIRECTION_MARQUEE" description="MOD_ECONOMICOS_DIRECTION_MARQUEE_DESC">
+                    <option value="1">MOD_ECONOMICOS_LEFT</option>
+                    <option value="0">MOD_ECONOMICOS_RIGHT</option>
+                </field>
+                <field name="mostrar_moneda_cambio" type="radio" default="0" label="MOD_ECONOMICOS_MOSTRAR_MONEDA" description="MOD_ECONOMICOS_MOSTRAR_MONEDA_DESC">
+                    <option value="1">MOD_ECONOMICOS_YES</option>
+                    <option value="0">MOD_ECONOMICOS_NO</option>
+                </field>
+                <field name="mostrar_creditos" type="radio" default="1" label="MOD_ECONOMICOS_MOSTRAR_CREDITOS" description="MOD_ECONOMICOS_MOSTRAR_CREDITOS_DESC">
+                    <option value="1">MOD_ECONOMICOS_YES</option>
+                    <option value="0">MOD_ECONOMICOS_NO</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+    
+    <!-- UPDATESERVER DEFINITION -->
+    <updateservers>
+        <!-- Note: No spaces or linebreaks allowed between the server tags -->
+	<server type="extension" priority="1" name="Indicadores Financieros">http://update.shakingweb.com/indicadores.xml</server>
+    </updateservers>
+    
+</extension>

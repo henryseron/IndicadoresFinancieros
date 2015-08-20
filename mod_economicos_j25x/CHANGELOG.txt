@@ -1,0 +1,33 @@
+Español
+
+Versión 1.2.1
+- Se cambia la url de búsqueda del IPC, ya que banco central no actualiza valor en fecha inicial del mes
+
+Versión 1.1.1:
+- Se corrige el valor del IPC, cuando el bco central no ha presentado el valor en su pagina se modificó el helper.php para que muestre 'ND'
+
+Versión 1.1.0:
+- Se agrega el valor de la U.T.M. y el I.P.C.
+- Se agrega la opción de mostrar los créditos del autor
+
+Versión 1.0.0:
+- Muestra UF, Dólar Obs. y Euro
+- Tiene la opción de mostrar los valores en tabla o en marquee
+- Tiene la opción de mostrar la moneda de cambio (CLP)
+
+English:
+
+Versión 1.2.1:
+- URL of IPC value is changed because central bank does not update the value in the beginning of the month
+
+Versión 1.1.1:
+- IPC value is repaired, helper.php was modified to show 'ND' when central bank does not had added the IPC value on his website
+
+Version 1.1.0:
+- Is added U.T.M. and I.P.C. values.
+- Is added option to show the credits of the author
+
+Version 1.0.0:
+- Show UF, Dólar Obs. and Euro
+- The indicators can be showed in table or marquee
+- The modue has the option to show the money exchange (CLP -> chilean peso)
